@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: #f9f3f8; /* Color de fondo */
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#otter {
+  width: 100px;
+  height: 100px;
+  background-image: url('nutria.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.stone {
+  width: 50px;
+  height: 50px;
+  background-image: url('piedra.png');
+  background-size: cover;
+  position: absolute;
+}
+
+#score-display {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #6c5b7b; /* Color del texto de la puntuación */
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #f0a6ca; /* Color de fondo del marcador */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.swal-title {
+  font-family: 'Comic Sans MS', cursive; /* Fuente */
+  color: #6c5b7b; /* Color del título */
+  font-size: 24px;
+}
+
+.swal-text {
+  font-family: 'Comic Sans MS', cursive; /* Fuente */
+  color: #6c5b7b; /* Color del texto */
+  font-size: 18px;
+}
+
+.swal-button {
+  background-color: #f0a6ca; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  font-family: 'Comic Sans MS', cursive; /* Fuente */
+  border: none; /* Quita el borde del botón */
+  border-radius: 20px; /* Borde redondeado */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px;
+}
+
+.swal-button:hover {
+  background-color: #d193b9; /* Cambio de color al pasar el mouse */
+}
+
+.swal-footer {
+  background-color: transparent !important; /* Fondo transparente */
+  border-top: none; /* Sin borde superior */
+}
+
+.swal-backdrop {
+  background-color: rgba(0, 0, 0, 0.4); /* Color del fondo de la ventana modal */
+  background-image: url('confetti.gif'); /* Imagen de fondo */
+  background-size: cover;
+}
